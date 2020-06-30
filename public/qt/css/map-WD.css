@@ -1,0 +1,10 @@
+.worldmap {
+    background: #222222;
+    width:960px;
+    height: 400px;
+    border:1px solid #363636;
+}
+.container-world-map{
+    margin-bottom:10px;
+    
+}

@@ -1,0 +1,301 @@
+/* 滚动条设置开始 */
+::-webkit-scrollbar{
+    width:6px;
+    background:#404040;
+}
+::-webkit-scrollbar-thumb{
+    background:#5C5C5C;
+}
+/* 滚动条设置结束 */
+/* 全局布局开始 */
+.container-china-map{
+    color:#BDBDBD;
+    height:426px;
+}
+.china-map-tiltle{
+    width:100%;    
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    font-size:22px;
+    background:#222;
+    border:1px solid #363636;
+    overflow:hidden;
+}
+.china-map-left{
+    width:200px;
+}
+.china-map-middle{
+    margin:0 310px 0 210px;
+}
+.china-map-right{
+    width:300px;
+}
+/* 全局布局结束 */
+/*左侧开始*/
+.china-map-left .top{
+    height:60px;
+    line-height:60px;
+    text-align:center;
+    font-size:30px;
+    background:#222;
+    border:1px solid #363636;
+    color:#E60000;
+}
+.china-map-left .middle{
+    height:240px;
+    text-align:center;
+    font-size:14px;
+    background:#222;
+    border:1px solid #363636;
+}
+.china-map-left .middle .middle-title{
+    font-size:bold;
+    height:50px;
+    padding-top:10px;
+}
+.china-map-left .middle .middle-content{
+    overflow:auto;
+    height:180px;
+}
+.china-map-left .middle .middle-content ul li{
+    line-height:30px;
+    border-bottom:1px solid #5c5c5c;
+}
+.china-map-left .middle .middle-content ul li h4{
+    color:#E60000;
+    display:inline-block;
+}
+.china-map-left .middle-control{
+    height:20px;
+    text-align:center;
+    font-size:14px;
+    background:#222;
+    border:1px solid #363636;
+    border-top:0px;
+    margin:0 10px;
+}
+.china-map-left .middle-control .l-sanjiao{
+    width:0;
+    height:0;
+    border-top:6px solid transparent;
+    border-bottom:6px solid transparent;
+    border-right:6px solid gray;
+    margin:4px 0 0 2px;
+    cursor: pointer;
+    position:relative;
+}
+.china-map-left .middle-control .l-sanjiao::before{
+    position: absolute;
+    content:" ";
+    width:0;
+    height:0;
+    border-top:3px solid transparent;
+    border-bottom:3px solid transparent;
+    border-right:3px solid #222;
+    margin:-3px 0 0 2px;
+}
+.china-map-left .middle-control .r-sanjiao{
+    width:0;
+    height:0;
+    border-top:6px solid transparent;
+    border-bottom:6px solid transparent;
+    border-left:6px solid gray;
+    margin:4px 2px 0 0;
+    cursor: pointer;
+    position:relative;
+}
+.china-map-left .middle-control .r-sanjiao::before{
+    position: absolute;
+    content:" ";
+    width:0;
+    height:0;
+    border-top:3px solid transparent;
+    border-bottom:3px solid transparent;
+    border-left:3px solid #222;
+    margin:-3px 0 0 -5px;
+}
+.china-map-left .bottom{
+    height:20px;
+    text-align:center;
+    font-size:14px;
+    background:#222;
+    border:1px solid #363636;
+}
+/* 左侧结束 */
+/* 中间开始 */
+.china-map-middle .top{
+    height:280px;
+    text-align:center;
+    font-size:10px;
+    background:#222;
+    border:1px solid #363636;
+    z-index:0;
+}
+.china-map-middle .middle-control{
+    height:30px;
+    line-height: 30px;
+    text-align:center;
+    background:#222;
+    border:1px solid #363636;
+    border-top:0px;
+    margin:0 10px;
+}
+.china-map-middle .middle-control .l-sanjiao{
+    width:0;
+    height:0;
+    border-top:6px solid transparent;
+    border-bottom:6px solid transparent;
+    border-right:6px solid gray;
+    margin:10px 0 0 4px;
+    cursor: pointer;
+    position:relative;
+}
+.china-map-middle .middle-control .l-sanjiao::before{
+    position: absolute;
+    content:" ";
+    width:0;
+    height:0;
+    border-top:3px solid transparent;
+    border-bottom:3px solid transparent;
+    border-right:3px solid #222;
+    margin:-3px 0 0 2px;
+}
+.china-map-middle .middle-control .r-sanjiao{
+    width:0;
+    height:0;
+    border-top:6px solid transparent;
+    border-bottom:6px solid transparent;
+    border-left:6px solid gray;
+    margin:10px 4px 0 0;
+    cursor: pointer;
+    position:relative;
+}
+.china-map-middle .middle-control .r-sanjiao::before{
+    position: absolute;
+    content:" ";
+    width:0;
+    height:0;
+    border-top:3px solid transparent;
+    border-bottom:3px solid transparent;
+    border-left:3px solid #222;
+    margin:-3px 0 0 -5px;
+}
+.china-map-middle .bottom{
+    height:40px;
+}
+.china-map-middle .bottom .bottom-num{
+    margin-right:10px;
+    height:40px;
+    width:60px;
+    text-align:center;
+    background:#222;
+    border:1px solid #363636;
+    font-size:30px;
+}
+.china-map-middle .bottom .bottom-content
+{
+    padding:0 10px;
+    height:40px;
+    background:#222;
+    border:1px solid #363636;
+    overflow:auto;
+}
+.china-map-middle .bottom .bottom-content p{
+    height:40px;
+}
+/* 中间结束 */
+/* 右侧开始 */
+.china-map-right .top .left-show{
+    height:180px;
+    width:140px;;
+    text-align:center;
+    font-size:14px;
+    background:#222;
+    border:1px solid #363636;
+}
+.china-map-right .top .left-show .left-show-title{
+    height:40px;
+    line-height:40px;
+    font-size:18px;
+}
+.china-map-right .top .left-show .left-show-content{
+    overflow:auto;
+    height:140px;
+}
+.china-map-right .top .left-show .left-show-content ul li{
+    line-height:20px;
+    border-bottom:1px solid #5c5c5c;
+}
+.china-map-right .top .right-show{
+    height:180px;
+    width:140px;
+    text-align:center;
+    font-size:14px;
+    background:#222;
+    border:1px solid #363636;
+}
+.china-map-right .top .right-show .right-show-title{
+    height:40px;
+    line-height:40px;
+}
+.china-map-right .top .right-show .right-show-content{
+    overflow:auto;
+    height:140px;
+}
+.china-map-right .top .right-show .right-show-content ul li{
+    line-height:20px;
+    border-bottom:1px solid #5c5c5c;
+}
+.china-map-right .top-control .left-show-control{
+    height:20px;
+    width:120px;
+    margin-left:10px;
+    text-align:center;
+    font-size:14px;
+    background:#222;
+    border:1px solid #363636;
+}
+.china-map-right .top-control .right-show-control{
+    height:20px;
+    width:120px;
+    margin-right:10px;
+    text-align:center;
+    font-size:14px;
+    background:#222;
+    border:1px solid #363636;
+}
+/*右下角Tab栏开始*/
+.map-tab{
+    margin-top:30px;
+}
+.map-tab .map-tab-con{
+    width:100%-cal(20px);
+    padding:10px 10px;
+    height:110px;
+}
+.map-tab .map-tab-con .map-item{
+    display:none;
+}
+.map-tab .map-tab-list{
+    box-sizing:border-box;
+    height:20px; 	
+	width:100%;
+}
+.map-tab .map-tab-list li{
+    line-height:20px;
+    float:left;
+    width:calc(33.33% - 2px);
+    text-align:center;
+    background:#222;
+    border:1px solid #363636;
+    cursor:pointer;
+}
+.map-tab .map-tab-list li.map-curent{
+    background:#68ACE5;
+}
+.leida-map{
+  height:110px;
+  width:100%-cal(20px);
+}
+/* 右下角Tab栏结束 */
